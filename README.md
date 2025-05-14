@@ -1,6 +1,6 @@
-# ilosrim's configs
+# MIRRR's configs
 
-<!-- 
+<!--
 This repository, `ilosrim/my-configs`, is a curated collection of configuration files and scripts that streamline the development environment setup. It serves as a personal toolkit to maintain consistency across various systems and projects.
 
 ## Features
@@ -22,6 +22,14 @@ Discover the power of a personalized, efficient development environment with ilo
 
 <h3 align="center"><b>Examples</b></h3>
 -->
+
+<img src="./assets/linux-mint-work.png" alt="Linux Mint neofetch" align="center">
+
+- **Operatsion Tizim:** Linux Mint 22.1 x86_64
+- **Terminal:** tmux
+- **Shell:** zsh 5.9
+
+<hr />
 
 <img src="./assets/wsl-tmux.png" alt="WSL2 neofetch" align="center">
 
