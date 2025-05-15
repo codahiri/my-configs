@@ -26,7 +26,15 @@ Discover the power of a personalized, efficient development environment with ilo
 <img src="./assets/linux-mint-work.png" alt="Linux Mint neofetch" align="center">
 
 - **Operatsion Tizim:** Linux Mint 22.1 x86_64
-- **Terminal:** tmux
+- **Terminal:** Kitty
+- **Shell:** zsh 5.9
+
+<hr />
+
+<img src="./assets/nixos.png" alt="NixOS fastfetch" align="center">
+
+- **Operatsion Tizim:** NixOS 25.05
+- **Terminal:** Ghostty
 - **Shell:** zsh 5.9
 
 <hr />
