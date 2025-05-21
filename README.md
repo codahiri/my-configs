@@ -23,7 +23,7 @@ Discover the power of a personalized, efficient development environment with ilo
 <h3 align="center"><b>Examples</b></h3>
 -->
 
-<img src="./assets/linux-mint-work.png" alt="Linux Mint neofetch" align="center">
+<img src="./assets/linux-mint-hero.png" alt="Linux Mint neofetch" align="center">
 
 - **Operatsion Tizim:** Linux Mint 22.1 x86_64
 - **Terminal:** Kitty
