@@ -1,108 +1,117 @@
 {
-  "update.mode": "none",
-  "extensions.autoUpdate": false,
-  "window.titleBarStyle": "custom",
-  "window.menuBarVisibility": "toggle",
-  "editor.fontFamily": "Hasklug Nerd Font",
-  "terminal.integrated.fontFamily": "Hasklug Nerd Font Propo",
-  "editor.fontSize": 14,
-  "explorer.confirmDragAndDrop": false,
-  "editor.fontLigatures": true,
-  "editor.cursorStyle": "line",
-  "editor.minimap.enabled": false,
-  "workbench.startupEditor": "none",
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true,
-  "editor.formatOnPaste": true,
-  "editor.tabSize": 2,
-  "editor.defaultFormatter": "vscode.typescript-language-features",
-  // "deno.enable": false,
-  // "deno.lint": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features" // denoland.vscode-deno
-  },
-  "workbench.layoutControl.type": "menu",
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.value": 10,
-  "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.showTabs": "none",
-  "files.autoSave": "off",
-  "explorer.openEditors.visible": 9,
-  "breadcrumbs.enabled": true,
-  "editor.renderControlCharacters": false,
-  "workbench.activityBar.location": "hidden",
-  "workbench.statusBar.visible": true,
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.stickyScroll.enabled": false,
-  "workbench.layoutControl.enabled": false,
-  "editor.mouseWheelZoom": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "explorer.confirmDelete": false,
-  "workbench.settings.applyToAllProfiles": [
-    "editor.tabSize"
-  ],
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  // VIM 
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "d",
-        "d"
-      ]
+    "update.mode": "none",
+    "extensions.autoUpdate": false,
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "Hasklug Nerd Font Bold",
+    "terminal.integrated.fontFamily": "Hasklug Nerd Font Bold",
+    "editor.fontSize": 14,
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontLigatures": true,
+    "editor.cursorStyle": "line",
+    "editor.minimap.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    // "deno.enable": false,
+    // "deno.lint": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
     },
-    {
-      "before": [
-        "<C-n>"
-      ],
-      "commands": [
-        ":nohl"
-      ]
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features", // denoland.vscode-deno
     },
-    {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "lineBreakInsert"
-      ],
-      "silent": true
+    "workbench.layoutControl.type": "menu",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 10,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.showTabs": "none",
+    "files.autoSave": "off",
+    "explorer.openEditors.visible": 9,
+    "breadcrumbs.enabled": true,
+    "editor.renderControlCharacters": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.stickyScroll.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDelete": false,
+    "workbench.settings.applyToAllProfiles": [
+        "editor.tabSize"
+    ],
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    // VIM 
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-b>": false,
+        "<C-w>": false,
+        "<C-p>": false,
+        // "<C-r>": false
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.colorTheme": "Lynx Dark Theme",
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "lkrms.pretty-php"
     }
-  ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false,
-    "<C-b>": false,
-    "<C-w>": false,
-    "<C-p>": false,
-    "<C-r>": false
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "workbench.colorTheme": "Lynx Dark Theme"
 }
