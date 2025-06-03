@@ -46,6 +46,14 @@
         "editor.tabSize"
     ],
     "typescript.updateImportsOnFileMove.enabled": "always",
+    // auto change theme
+    "vscode-auto-light-dark-theme.autoToggle": false,
+    "vscode-auto-light-dark-theme.lightTheme": "Lynx Ghibli Theme",
+    "vscode-auto-light-dark-theme.darkTheme": "Lynx Dark Theme",
+    "vscode-auto-light-dark-theme.toggleSetting": "custom",
+    "vscode-auto-light-dark-theme.lightStartTime": 6,
+    "vscode-auto-light-dark-theme.darkStartTime": 20,
+    "workbench.colorTheme": "Lynx Dark Theme",
     // VIM 
     "vim.leader": "<space>",
     "vim.easymotion": true,
@@ -99,6 +107,7 @@
         "<C-b>": false,
         "<C-w>": false,
         "<C-p>": false,
+        "<C-d>": false,
         // "<C-r>": false
     },
     "extensions.experimental.affinity": {
@@ -107,11 +116,10 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "workbench.colorTheme": "Lynx Dark Theme",
     "[blade]": {
         "editor.defaultFormatter": "shufo.vscode-blade-formatter"
     },
     "[php]": {
         "editor.defaultFormatter": "lkrms.pretty-php"
-    }
+    },
 }
