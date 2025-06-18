@@ -23,6 +23,14 @@ Discover the power of a personalized, efficient development environment with ilo
 <h3 align="center"><b>Examples</b></h3>
 -->
 
+<img src="./assets/debian.png" alt="Debian neofetch" align="center">
+
+- **Operatsion Tizim:** Debian 12
+- **Terminal:** Kitty
+- **Shell:** zsh 5.9
+
+<hr />
+
 <img src="./assets/linux-mint-hero.png" alt="Linux Mint neofetch" align="center">
 
 - **Operatsion Tizim:** Linux Mint 22.1 x86_64
