@@ -1,18 +1,41 @@
 #!/bin/bash
 
-# Specify the directory where your JavaScript files are located
-SOURCE_DIR="/path/to/your/js/files"
+set -e
 
-# Loop through each .js file in the directory
-for js_file in "$SOURCE_DIR"/*.js; do
-    # Check if the file exists
-    if [ -f "$js_file" ]; then
-        # Create a new .ts filename by replacing the .js extension with .ts
-        ts_file="${js_file%.js}.ts"
-        # Convert the file from JavaScript to TypeScript
-        mv "$js_file" "$ts_file"
-        echo "Converted $js_file to $ts_file"
-    fi
-done
+# === Sozlamalar ===
+NERD_FONT_NAME="FantasqueSansMono"
+NERD_FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/${NERD_FONT_NAME}.zip"
+EMOJI_FONT_URL="https://noto-website-2.storage.googleapis.com/pkgs/NotoColorEmoji-unhinted.zip"
+FONT_DIR="$HOME/.local/share/fonts"
+TMP_DIR="/tmp/fonts-install"
 
-echo "Conversion complete!"
+# === Tayyorlov ===
+mkdir -p "$FONT_DIR"
+mkdir -p "$TMP_DIR"
+
+# === Nerd Font yuklash ===
+echo "🔤 Yuklab olinmoqda: $NERD_FONT_NAME..."
+wget -O "$TMP_DIR/${NERD_FONT_NAME}.zip" "$NERD_FONT_URL"
+
+echo "📦 Ochilmoqda: $NERD_FONT_NAME..."
+unzip -o "$TMP_DIR/${NERD_FONT_NAME}.zip" -d "$FONT_DIR"
+
+# === Emoji Font yuklash ===
+echo "😊 Yuklab olinmoqda: Noto Color Emoji..."
+wget -O "$TMP_DIR/NotoColorEmoji.zip" "$EMOJI_FONT_URL"
+
+echo "📦 Ochilmoqda: Noto Color Emoji..."
+unzip -o "$TMP_DIR/NotoColorEmoji.zip" -d "$TMP_DIR"
+
+# Faqat kerakli .ttf faylni ko‘chir
+find "$TMP_DIR" -name "NotoColorEmoji.ttf" -exec cp {} "$FONT_DIR" \;
+
+# === Font cache yangilash ===
+echo "🔄 Font cache yangilanmoqda..."
+fc-cache -f "$FONT_DIR"
+
+# === Tozalash ===
+rm -rf "$TMP_DIR"
+
+echo "✅ Barcha fontlar o‘rnatildi va tizimga tayyor!"
+

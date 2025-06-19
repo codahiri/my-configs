@@ -211,6 +211,8 @@ bindsym $mod+r mode "resize"
 
 # Custome keys
 bindsym $mod+b exec chromium
+bindsym $mod+Shift+s exec --no-startup-id sh -c 'file=~/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png && scrot -s "$file" && notify-send "📸 Screenshot saved" "$file"'
+
 
 # Oynalar orasidagi umumiy bo'shliq (inner gaps)
 gaps inner 2
