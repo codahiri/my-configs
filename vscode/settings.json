@@ -3,8 +3,8 @@
     "extensions.autoUpdate": false,
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "toggle",
-    "editor.fontFamily": "Hasklug Nerd Font Bold",
-    "terminal.integrated.fontFamily": "Hasklug Nerd Font Bold",
+    "editor.fontFamily": "FantasqueSansM Nerd Font",
+    "terminal.integrated.fontFamily": "FantasqueSansM Nerd Font",
     "editor.fontSize": 14,
     "explorer.confirmDragAndDrop": false,
     "editor.fontLigatures": true,
@@ -47,72 +47,13 @@
     ],
     "typescript.updateImportsOnFileMove.enabled": "always",
     // auto change theme
-    "vscode-auto-light-dark-theme.autoToggle": false,
-    "vscode-auto-light-dark-theme.lightTheme": "Lynx Ghibli Theme",
-    "vscode-auto-light-dark-theme.darkTheme": "Lynx Dark Theme",
+    "vscode-auto-light-dark-theme.autoToggle": true,
+    "vscode-auto-light-dark-theme.lightTheme": "GHIBLI - (Lynx theme)",
+    "vscode-auto-light-dark-theme.darkTheme": "DARK (Lynx theme)",
     "vscode-auto-light-dark-theme.toggleSetting": "custom",
     "vscode-auto-light-dark-theme.lightStartTime": 6,
     "vscode-auto-light-dark-theme.darkStartTime": 20,
-    "workbench.colorTheme": "Lynx Dark Theme",
-    // VIM 
-    "vim.leader": "<space>",
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        },
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "d"
-            ],
-            "after": [
-                "d",
-                "d"
-            ]
-        },
-        {
-            "before": [
-                "<C-n>"
-            ],
-            "commands": [
-                ":nohl"
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "commands": [
-                "lineBreakInsert"
-            ],
-            "silent": true
-        }
-    ],
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false,
-        "<C-b>": false,
-        "<C-w>": false,
-        "<C-p>": false,
-        "<C-d>": false,
-        // "<C-r>": false
-    },
-    "extensions.experimental.affinity": {
-        "vscodevim.vim": 1
-    },
+    "workbench.colorTheme": "DARK (Lynx theme)",
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -122,4 +63,9 @@
     "[php]": {
         "editor.defaultFormatter": "lkrms.pretty-php"
     },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "explorer.confirmPasteNative": false,
+    "git.autofetch": true,
 }
